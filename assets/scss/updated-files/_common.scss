@@ -1,0 +1,39 @@
+.row {
+    --bs-gutter-x: 30px;
+
+    @include media-breakpoint-down(md) {
+        --bs-gutter-x: 1.5rem;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $text-dark;
+    font-family: $font-family;
+    line-height: 1.2;
+    margin: 0;
+    letter-spacing: 0;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+a,
+.btn,
+button {
+    transition: all 0.35s ease-in-out;
+    outline: medium none;
+    font-weight: 600;
+    text-decoration: none;
+    color: $text-dark;
+}
+
+p {
+    color: $grey;
+    margin: 0 0 25px;
+    text-transform: none;
+    font-weight: 400;
+}

@@ -1,0 +1,23 @@
+// Node modules bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Custom files
+@import "updated-files/variables";
+@import "updated-files/mixins";
+@import "updated-files/common";
+@import "updated-files/header";
+@import "updated-files/section";
+@import "updated-files/footer";
+
+html {
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
+}
+
+body {
+  overscroll-behavior: none;
+  font-family: $font-family;
+  @include font-style(17px, 1.7, 400);
+  overflow-x: hidden;
+  color: $grey;
+}

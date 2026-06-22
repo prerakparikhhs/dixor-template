@@ -1,0 +1,16 @@
+@mixin font-style ($size, $line-height, $weight) {
+  font-size: $size;
+  line-height: $line-height;
+  font-weight: $weight;
+}
+
+@mixin flex-property($display, $justify-content, $align-items) {
+  display: $display;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin grid-property ($columns) {
+  display: grid;
+  grid-template-columns: $columns;
+}

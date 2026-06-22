@@ -1,0 +1,267 @@
+footer {
+    border-top: 1px solid $very-light-grey;
+
+    .footer-top-wrapper {
+        @include media-breakpoint-down(lg) {
+            padding-bottom: 120px;
+        }
+        @include media-breakpoint-down(md) {
+            padding-bottom: 60px;
+        }
+    }
+
+    .footer-item {
+        padding-top: 120px;
+        padding-bottom: 120px;
+
+        @include media-breakpoint-down(lg) {
+            padding-top: 50px;
+            padding-bottom: 0;
+        }
+
+        @include media-breakpoint-down(md) {
+            padding: 50px 12px 0;
+        }
+
+        &.about {
+            border-right: 1px solid $very-light-grey;
+            padding-right: 120px;
+            padding-left: 15px;
+
+            @include media-breakpoint-between(lg, xl) {
+                padding-right: 50px;
+            }
+
+            @include media-breakpoint-down(lg) {
+                border: none;
+                padding-top: 50px;
+                padding-bottom: 0;
+                padding-right: 15px;
+            }
+
+            @include media-breakpoint-down(md) {
+                padding: 50px 15px 0px 12px;
+            }
+        }
+
+        .img-wrapper {
+            @include flex-property(flex, space-between, center);
+
+            @include media-breakpoint-between (lg,xl) {
+                gap:50px;
+            }
+
+            img {
+                height: 40px;
+                max-width: 100%;
+            }
+        }
+
+        .address {
+            display: flex;
+            gap: 80px;
+            margin-top: 50px;
+
+            @media (max-width: 500px) {
+                display: block;
+            }
+
+            >div {
+                flex-basis: 50%;
+
+                @media (max-width: 500px) {
+                    margin-bottom: 30px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+
+                h4 {
+                    @include font-style(20px, 1.2, 600);
+                    margin-bottom: 25px;
+                    color: $text-dark;
+
+                    @media (max-width: 500px) {
+                        margin-bottom: 15px;
+                    }
+                }
+
+                p {
+                    margin-bottom: 0;
+                    @include font-style(17px, 1.7, 400);
+                    color: $grey;
+                }
+            }
+        }
+
+        .newsletter-block {
+            position: relative;
+            margin-top: 30px;
+            border: 1px solid $light-grey;
+            border-radius: 10px;
+            background: transparent;
+            max-width: 100%;
+
+            @include media-breakpoint-down(lg) {
+                border-radius: 10px;
+                border: 1px solid $light-grey;
+            }
+
+            input {
+                width: 100%;
+                border: none;
+                padding: 15px 30px;
+                // padding-right: 50px;
+                background: transparent;
+                box-shadow: none;
+                color: $text-dark;
+                @include font-style(20px, 1.5, 400);
+
+                @include media-breakpoint-down(lg) {
+                    padding: 15px 30px;
+                }
+
+                &:focus {
+                    background: transparent;
+                    box-shadow: none;
+                    color: $text-dark;
+                }
+
+                &::placeholder {
+                    color: $text-dark;
+                }
+            }
+
+            button {
+                width: auto;
+                padding: 17px 0;
+                height: 60px;
+                right: 15px;
+                background: transparent;
+                position: absolute;
+                top: 0;
+                border: none;
+
+                @include media-breakpoint-down(lg) {
+                    right: 15px;
+                }
+
+                img {
+                    height: 100%;
+                    object-fit: contain;
+                    object-position: center;
+                    position: relative;
+                    top: -3px;
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .useful-link-title {
+            @include font-style(24px, 1.2, 600);
+            margin-bottom: 25px;
+            color: $text-dark;
+        }
+
+        .imp-links {
+            margin: 0 -15px;
+
+            @media (max-width: 500px) {
+                margin: 0;
+            }
+
+            div {
+                float: left;
+                width: 50%;
+                padding: 3px 15px;
+                color: $grey;
+
+                @media (max-width: 500px) {
+                    float: none;
+                    width: 100%;
+                    padding: 0;
+                    margin-bottom: 15px;
+                }
+
+                a {
+                    @include font-style(20px, 1.7, 400);
+                    color: $grey;
+                }
+            }
+        }
+
+        .contact-info {
+            border-top: 1px solid $light-grey;
+            padding-top: 30px;
+            margin-top: 30px;
+
+            .wrapper {
+                @include flex-property(flex, space-between, center);
+                gap: 5px 30px;
+                flex-wrap: wrap;
+
+                a {
+                    @include font-style(26px, 1.7, 500);
+                    color: $text-dark;
+
+                    &:hover {
+                        color: $green;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        border-top: 1px solid $very-light-grey;
+        padding: 15px 0;
+
+        @include media-breakpoint-between(md, lg) {
+            padding: 30px 0;
+        }
+
+        .footer-social-media-icons {
+            @include media-breakpoint-down(lg) {
+                text-align: center;
+            }
+            >div {
+                display: inline-block;
+                margin-right: 10px;
+                @include media-breakpoint-down(lg) {
+                    margin: 0 10px;
+                }
+                a {
+                    width: 40px;
+                    height: 40px;
+                    display: inline-block;
+                    text-align: center;
+                    line-height: 40px;
+                    border-radius: 50%;
+                    border: 1px solid $light-grey;
+                    color: $text-dark;
+                    background: $white;
+                }
+
+                img {
+                    padding: 12px;
+                    position: relative;
+                    top: -2px;
+                    max-width: 100%;
+                    filter: brightness(0%);
+                }
+            }
+
+            p {
+                color: $grey;
+                @include font-style(17px, 1.7, 400);
+            }
+        }
+
+        .footer-copyright {
+            @include media-breakpoint-down(lg) {
+                margin-top: 15px;
+            }
+        }
+    }
+}
