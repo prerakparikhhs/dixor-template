@@ -1,0 +1,1564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Font awesome icons -->
+    <script src="https://kit.fontawesome.com/42c6ce979d.js" crossorigin="anonymous"></script>
+
+    <!-- Slick -->
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/slick-theme.css">
+
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+    <!-- Font awesome v5 -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/scss/main.css">
+
+    <title>Dixor</title>
+</head>
+
+<body>
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-bars">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- Toggle button for light dark theme -->
+    <div class="radio-btn">
+        <div class="radio-inner" id="themeToggle"></div>
+    </div>
+
+    <div id="content">
+        <!-- Header -->
+        <header>
+            <nav class="navbar">
+                <div class="container d-flex justify-content-between align-items-center position-relative">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbar-menu">
+                            <i class="bi bi-list"></i>
+                        </button>
+                        <a href="index.html" class="navbar-brand">
+                            <img src="./assets/images/header-logo.png" alt="header logo" class="dark-logo">
+                            <img src="./assets/images/header-logo-light.png" alt="" class="light-logo">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar-menu">
+                        <img src="./assets/images/header-logo.png" alt="">
+                        <button type="button" class="navbar-toggle" data-bs-toggle="collapse"
+                            data-bs-target="#navbar-menu">
+                            <i class="bi bi-x"></i>
+                        </button>
+                        <ul class="nav navbar-nav navbar-center">
+                            <li class="dropdown megamenu-fw column-three">
+                                <a href="#" class="dropdown-toggle dropdown-link" data-bs-toggle="dropdown">Demos</a>
+                                <ul class="dropdown-menu megamenu-content" role="menu">
+                                    <li>
+                                        <div class="col-menu-wrap">
+                                            <div class="menu-cal-items">
+                                                <div class="col-menu">
+                                                    <h4>Homepage Dark</h4>
+                                                    <ul class="menu-col">
+                                                        <li><a href="#">Home Main</a></li>
+                                                        <li><a href="#">Modern Agency</a></li>
+                                                        <li><a href="#">Creative Agency</a></li>
+                                                        <li><a href="#">Startup Agency</a></li>
+                                                        <li><a href="#">Digital Agency</a></li>
+                                                        <li><a href="#">Modern Startup</a></li>
+                                                        <li><a href="#">Design Studio</a></li>
+                                                        <li><a href="#">Showcase Carousel</a></li>
+                                                        <li><a href="#">Showcase Slider</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-menu">
+                                                    <h4>Homepage Light</h4>
+                                                    <ul class="menu-col">
+                                                        <li><a href="#">Home Main</a></li>
+                                                        <li><a href="#">Modern Agency</a></li>
+                                                        <li><a href="#">Creative Agency</a></li>
+                                                        <li><a href="#">Startup Agency</a></li>
+                                                        <li><a href="#">Digital Agency</a></li>
+                                                        <li><a href="#">Modern Startup</a></li>
+                                                        <li><a href="#">Design Studio</a></li>
+                                                        <li><a href="#">Showcase Carousel</a></li>
+                                                        <li><a href="#">Showcase Slider</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-menu">
+                                                    <h4>Newly Added Home</h4>
+                                                    <ul class="menu-col">
+                                                        <li><a href="#">Full Width Slider</a></li>
+                                                        <li><a href="#">Portfolio Carousel</a></li>
+                                                        <li><a href="#">Interactive Portfolio</a></li>
+                                                        <li><a href="#">Portfolio Masonary</a></li>
+                                                        <li><a href="#">Full Width Slider Light</a></li>
+                                                        <li><a href="#">Portfolio Carousel Light</a></li>
+                                                        <li><a href="#">Interactive Portfolio Light</a></li>
+                                                        <li><a href="#">Portfolio Masonary Light</a></li>
+                                                        <li><a class="badge" href="#">RTL Test</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="megamenu-banner">
+                                                <div class="thumb">
+                                                    <img src="./assets/images/video.png" alt="">
+                                                    <a href="https://www.youtube.com/watch?v=35mvh-2oII8"
+                                                        class="popup-youtube video-button"><i
+                                                            class="bi bi-play"></i></a>
+                                                </div>
+                                                <h4>Intro Video</h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle dropdown-link" data-bs-toggle="dropdown">Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">About Style Two</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Team Members</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Team Style One</a></li>
+                                            <li><a href="#">Team Style Two</a></li>
+                                            <li><a href="#">Team Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Projects</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Project Showcase</a></li>
+                                            <li><a href="#">Interactive Portfolio</a></li>
+                                            <li><a href="#">Showcase Carousel</a></li>
+                                            <li><a href="#">Project Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Faq</a></li>
+                                    <li><a href="#">Error Page</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-toggle">Pages Light
+                                            Version</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">About Style Two</a></li>
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Team
+                                                    Members</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">Team Style One</a></li>
+                                                    <li><a href="#">Team Style Two</a></li>
+                                                    <li><a href="#">Team Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle"
+                                                    data-bs-toggle="dropdown">Projects</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">Project Showcase</a></li>
+                                                    <li><a href="#">Interactive Portfolio</a></li>
+                                                    <li><a href="#">Showcase Carousel</a></li>
+                                                    <li><a href="#">Project Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Contact Us</a></li>
+                                            <li><a href="#">Faq</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Service Version One</a></li>
+                                    <li><a href="#">Service Version Two</a></li>
+                                    <li><a href="#">Service Version Three</a></li>
+                                    <li><a href="#">Service Version Four</a></li>
+                                    <li><a href="#">Marketing Strategy</a></li>
+                                    <li><a href="#">Enterprise Consulting</a></li>
+                                    <li><a href="#">Growth Tracking</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Services Light
+                                            Version</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Service Version One</a></li>
+                                            <li><a href="#">Service Version Two</a></li>
+                                            <li><a href="#">Service Version Three</a></li>
+                                            <li><a href="#">Service Version Four</a></li>
+                                            <li><a href="#">Marketing Strategy</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle dropdown-link" data-bs-toggle="dropdown">Blog</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Blog Standard</a></li>
+                                    <li><a href="#">Blog With Sidebar</a></li>
+                                    <li><a href="#">Blog Grid Two Colum</a></li>
+                                    <li><a href="#">Blog Grid Three Colum</a></li>
+                                    <li><a href="#">Blog Single</a></li>
+                                    <li><a href="#">Blog Single With Sidebar</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Blog Light
+                                            Version</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Blog Standard</a></li>
+                                            <li><a href="#">Blog With Sidebar</a></li>
+                                            <li><a href="#">Blog Grid Two Colum</a></li>
+                                            <li><a href="#">Blog Grid Three Colum</a></li>
+                                            <li><a href="#">Blog Single</a></li>
+                                            <li><a href="#">Blog Single With Sidebar</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="attr-right">
+                        <div class="attr-nav">
+                            <ul>
+                                <li class="side-menu">
+                                    <a href="#">
+                                        <span class="bar-1"></span>
+                                        <span class="bar-2"></span>
+                                        <span class="bar-3"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar">
+                            <a href="#" class="close-btn">
+                                <i class="fa-solid fa-xmark"></i>
+                            </a>
+                            <div class="top">
+                                <div class="widget">
+                                    <div class="logo">
+                                        <img src="./assets/images/header-logo-light.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="widget address">
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <div class="content">
+                                                    <p>Address</p>
+                                                    <strong>California, TX 70240</strong>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="content">
+                                                    <p>Email</p>
+                                                    <strong>support@validtheme.com</strong>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="content">
+                                                    <p>Contact</p>
+                                                    <strong>+44-20-7328-4499</strong>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newsletter-social-icons-wrapper">
+                                <div class="newsletter">
+                                    <h4 class="title">Get Subscribed!</h4>
+
+                                    <form>
+                                        <div class="input-group">
+                                            <input type="email" class="form-control" placeholder="Enter your e-mail">
+
+                                            <span>
+                                                <button class="btn btn-primary" type="submit">
+                                                    <i class="bi bi-arrow-up-right"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="social-icons d-flex">
+                                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="https://www.behance.net/"><i class="fa-brands fa-behance"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overlay"></div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Banner -->
+        <section class="banner-section">
+            <div class="light-banner"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8">
+                        <div class="banner-title-wrapper">
+                            <div class="banner-title">
+                                <h2 class="title-left animate mb-0">Designing</h2>
+                                <h2 class="title-right text-start text-md-end animate mb-0">Creative</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="img-wrapper">
+                            <img src="./assets/images/design.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-7">
+                        <div class="content-wrapper">
+                            <h4>Dexus Agency</h4>
+                            <div class="right-content">
+                                <p>
+                                    Providing innovative solutions in branding, marketing, design, and advertising.
+                                    These
+                                    agencies often collaborate with clients to develop unique campaigns, visual
+                                    identities,
+                                    and digital strategies that resonate with target audiences. Services may include
+                                    graphic
+                                    design, content creation, social media management.
+                                </p>
+                                <a class="hover-animation" href="#"><i class="bi bi-arrow-right"></i> <span>Know
+                                        More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 offset-xl-1">
+                        <div class="card-wrapper">
+                            <div class="card-content">
+                                <div class="completed-projects">
+                                    <div class="completed-projects-number">
+                                        31K
+                                    </div>
+                                    <span class="completed-projects-text">Completed Projects</span>
+                                </div>
+                                <a href="#"><i class="bi bi-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-5">
+                        <div class="img-wrapper">
+                            <img src="./assets/images/not found.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 offset-xl-1 col-lg-7">
+                        <div class="about-info">
+                            <div class="info">
+                                <div class="d-flex">
+                                    <a href="#">
+                                        <img src="./assets/images/arrow.png" alt="">
+                                    </a>
+                                    <h2 class="title text-uppercase text">Best creative & digital agency</h2>
+                                </div>
+                                <p class="text">
+                                    Give lady of they such they sure it. Me contained explained my education. Vulgar as
+                                    hearts by garret. Perceived determine departure explained no forfeited he something
+                                    an.
+                                    Contrasted dissimilar get joy you instrument out reasonably
+                                </p>
+                            </div>
+                            <ul class="service-list">
+                                <li>
+                                    <a href="#">
+                                        <div class="icon"><i class="bi bi-arrow-up-right"></i></div>
+                                        <span>01</span>
+                                        Social Media
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon"><i class="bi bi-arrow-up-right"></i></div>
+                                        <span>02</span>
+                                        Content Writting
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon"><i class="bi bi-arrow-up-right"></i></div>
+                                        <span>03</span>
+                                        Video Production
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service section -->
+        <section class="service-section">
+            <div class="container">
+                <div class="service-wrapper">
+                    <div class="service-title-wrapper-block">
+                        <div class="row">
+                            <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 text-center">
+                                <div class="service-title-wrapper">
+                                    <h4 class="sub-title">Services we offer</h4>
+                                    <h2 class="mb-0 title animate">
+                                        Turn Information Into Actionable Insights
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card-wrapper">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-6 col-md-6 single-item">
+                                <div class="services-style-one-item" data-card="0">
+                                    <div class="icon">
+                                        <img src="./assets/images/icon 1.png" alt="">
+                                    </div>
+                                    <h4><a href="#">Marketing & SEO Optimization</a></h4>
+                                    <p>
+                                        Explained jas something an. Contrasted dissimilar get joy you instrument out
+                                        reasonably. Again keeps at no meant stuff.
+                                    </p>
+                                    <a href="#" class="btn-full">Read More <i class="bi bi-arrow-up-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 single-item">
+                                <div class="services-style-one-item" data-card="1">
+                                    <div class="icon">
+                                        <img src="./assets/images/icon 2.png" alt="">
+                                    </div>
+                                    <h4><a href="#">Mobile App & Web Development</a></h4>
+                                    <p>
+                                        Explained jas something an. Contrasted dissimilar get joy you instrument out
+                                        reasonably. Again keeps at no meant stuff.
+                                    </p>
+                                    <a href="#" class="btn-full">Read More <i class="bi bi-arrow-up-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 single-item">
+                                <div class="services-style-one-item" data-card="2">
+                                    <div class="icon">
+                                        <img src="./assets/images/icon 3.png" alt="">
+                                    </div>
+                                    <h4><a href="#">UI/UX Design from Professionals</a></h4>
+                                    <p>
+                                        Explained jas something an. Contrasted dissimilar get joy you instrument out
+                                        reasonably. Again keeps at no meant stuff.
+                                    </p>
+                                    <a href="#" class="btn-full">Read More <i class="bi bi-arrow-up-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 single-item">
+                                <div class="services-style-one-item" data-card="3">
+                                    <div class="icon">
+                                        <img src="./assets/images/icon 4.png" alt="">
+                                    </div>
+                                    <h4><a href="#">Access to the Latest Technology</a></h4>
+                                    <p>
+                                        Explained jas something an. Contrasted dissimilar get joy you instrument out
+                                        reasonably. Again keeps at no meant stuff.
+                                    </p>
+                                    <a href="#" class="btn-full">Read More <i class="bi bi-arrow-up-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slider section -->
+        <section class="slider-section overflow-hidden">
+            <div class="container">
+                <div class="row align-items-xl-center">
+                    <div class="col-lg-4 col-wrapper">
+                        <div class="left-content">
+                            <h4 class="sub-title">Recent Work</h4>
+                            <p class="animate">Diasert carets dolor sit amet consectetur
+                                adipisicing elit. Deserunt ullam laboriosam,
+                                excepturi quibusdam ipsa sed maiores illo qui vel
+                                dicta impedit nobis sapiente culpa non quis
+                                provident ex facilis voluptates.
+                            </p>
+                            <div class="info-card">
+                                <h5>Experience the perfect blend of creativity and functionality</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="right-section">
+                            <!-- <div class="hero-slider">
+                                <div class="slider-item">
+                                    <img src="./assets/images/slider img one.png" alt="">
+
+                                    <div class="info">
+                                        <h2><a href="#">Motion <strong>Graphics</strong></a></h2>
+                                        <a class="hover-animation" href="#"><i class="bi bi-arrow-right"></i> <span>See
+                                                Details
+                                            </span></a>
+                                    </div>
+                                </div>
+                                <div class="slider-item">
+                                    <img src="./assets/images/slider img two.png" alt="">
+
+                                    <div class="info">
+                                        <h2><a href="#">Market <strong>Branding</strong></a></h2>
+                                        <a class="hover-animation" href="#"><i class="bi bi-arrow-right"></i> <span>See
+                                                Details
+                                            </span></a>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                            <div class="hero-slider swiper">
+                                <div class="swiper-wrapper">
+
+                                    <div class="slider-item swiper-slide">
+                                        <img src="./assets/images/slider img one.png" alt="">
+
+                                        <div class="info">
+                                            <h2>
+                                                <a href="#">Motion <strong>Graphics</strong></a>
+                                            </h2>
+                                            <a class="hover-animation" href="#">
+                                                <i class="bi bi-arrow-right"></i>
+                                                <span>See Details</span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="slider-item swiper-slide">
+                                        <img src="./assets/images/slider img two.png" alt="">
+
+                                        <div class="info">
+                                            <h2>
+                                                <a href="#">Market <strong>Branding</strong></a>
+                                            </h2>
+                                            <a class="hover-animation" href="#">
+                                                <i class="bi bi-arrow-right"></i>
+                                                <span>See Details</span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="slider-nav">
+                                <button class="slide-prev">
+                                    <i class="bi bi-chevron-left"></i>
+                                </button>
+
+                                <div class="slide-count">
+                                    <span class="current-slide">1</span>
+                                    <span class="divider"></span>
+                                    <span class="total-slide">0</span>
+                                </div>
+
+                                <button class="slide-next">
+                                    <i class="bi bi-chevron-right"></i>
+                                </button>
+                            </div>
+
+                            <!-- <div class="slider-nav">
+                                <button class="slide-prev">
+                                    <i class="bi bi-chevron-left"></i>
+                                </button>
+                                <div class="slide-count">
+                                    <span class="current-slide">1</span>
+                                    <span class="divider"></span>
+                                    <span class="total-slide">0</span>
+                                </div>
+                                <button class="slide-next">
+                                    <i class="bi bi-chevron-right"></i>
+                                </button>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- team section -->
+        <section class="team-section">
+            <div class="team-heading">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 text-center">
+                            <div class="site-heading">
+                                <h4 class="sub-title">Team members</h4>
+                                <h2 class="title animate">Turn Information Into Actionable Insights</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="team-members-tab">
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active mt-0" id="home-tab" data-bs-toggle="tab"
+                                        data-bs-target="#home-tab-pane" type="button" role="tab"
+                                        aria-controls="home-tab-pane" aria-selected="true"><strong>Managing
+                                            Director</strong><span>Head of
+                                            Department</span></button>
+
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                        data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                        aria-controls="profile-tab-pane" aria-selected="false"><strong>Marketing
+                                            Manager</strong><span>Sales Department</span></button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                        data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                        aria-controls="contact-tab-pane" aria-selected="false"><strong>Sofware
+                                            Developer</strong><span>App Department</span></button>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-7 offset-xl-1">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                                    aria-labelledby="home-tab" tabindex="0">
+                                    <div class="team-slider">
+                                        <div>
+                                            <div class="team-info-wrapper">
+                                                <div class="thumb">
+                                                    <img src="./assets/images/team member 3.png" alt="">
+                                                    <div class="social-overlay">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://dribbble.com/"><i class="bi bi-dribbble"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="icon">
+                                                            <i class="bi bi-plus"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <h4><a href="#">James Baker</a></h4>
+                                                    <span>CEO & Founder</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="team-info-wrapper">
+                                                <div class="thumb">
+                                                    <img src="./assets/images/team member 1.png" alt="">
+                                                    <div class="social-overlay">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://dribbble.com/"><i class="bi bi-dribbble"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="icon">
+                                                            <i class="bi bi-plus"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <h4><a href="#">Dalton Grant</a></h4>
+                                                    <span>Chairman</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="team-info-wrapper">
+                                                <div class="thumb">
+                                                    <img src="./assets/images/team member 2.png" alt="">
+                                                    <div class="social-overlay">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://dribbble.com/"><i class="bi bi-dribbble"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="icon">
+                                                            <i class="bi bi-plus"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <h4><a href="#">Ryan Ricketts</a></h4>
+                                                    <span>Manager</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
+                                    aria-labelledby="profile-tab" tabindex="0">
+                                    <div class="team-slider">
+                                        <div>
+                                            <div class="team-info-wrapper">
+                                                <div class="thumb">
+                                                    <img src="./assets/images/team member 4.png" alt="">
+                                                    <div class="social-overlay">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="bi bi-dribbble"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="icon">
+                                                            <i class="bi bi-plus"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <h4><a href="#">Danny Russell</a></h4>
+                                                    <span>Head of marketing</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="team-info-wrapper">
+                                                <div class="thumb">
+                                                    <img src="./assets/images/team member 5.png" alt="">
+                                                    <div class="social-overlay">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="bi bi-dribbble"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="icon">
+                                                            <i class="bi bi-plus"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <h4><a href="#">James Baker</a></h4>
+                                                    <span>Product Developer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="team-info-wrapper">
+                                                <div class="thumb">
+                                                    <img src="./assets/images/team member 6.png" alt="">
+                                                    <div class="social-overlay">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="bi bi-dribbble"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="icon">
+                                                            <i class="bi bi-plus"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <h4><a href="#">James Baker</a></h4>
+                                                    <span>CEO & Founder</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
+                                    aria-labelledby="contact-tab" tabindex="0">
+                                    <div class="team-slider">
+                                        <div>
+                                            <div class="team-info-wrapper">
+                                                <div class="thumb">
+                                                    <img src="./assets/images/team member 7.png" alt="">
+                                                    <div class="social-overlay">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="bi bi-dribbble"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="icon">
+                                                            <i class="bi bi-plus"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <h4><a href="#">Rusa Jinuh</a></h4>
+                                                    <span>Web Developer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="team-info-wrapper">
+                                                <div class="thumb">
+                                                    <img src="./assets/images/team member 8.png" alt="">
+                                                    <div class="social-overlay">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="bi bi-dribbble"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="icon">
+                                                            <i class="bi bi-plus"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <h4><a href="#">Dalton Grant</a></h4>
+                                                    <span>UI Designer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="team-info-wrapper">
+                                                <div class="thumb">
+                                                    <img src="./assets/images/team member 9.png" alt="">
+                                                    <div class="social-overlay">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="bi bi-dribbble"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="icon">
+                                                            <i class="bi bi-plus"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <h4><a href="#">Megh Grant</a></h4>
+                                                    <span>Content Creator</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section class="testimonial-section">
+            <div class="img-wrapper">
+                <img src="./assets/images/shape-1.png" alt="" id="shapeImg">
+            </div>
+            <div class="testimonial-wrapper">
+                <div class="container">
+                    <div class="position-relative testimonial-title-wrapper">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <h2 class="title text-uppercase">Testimonials</h2>
+                            </div>
+                            <div class="col-lg-4 text-lg-end text-center">
+                                <div class="testimonial-quote">
+                                    <h2>4.9</h2>
+                                    <div class="info">
+                                        <div class="ratings">
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star-fill"></i>
+                                        </div>
+                                        <span>145 (Review)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="swiper testimonial-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-card">
+                                            <div class="testimonial-rating">
+                                                <span>4.7</span>
+                                                <div class="icon">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Mentioning consultation discover apartments. ndulgence off under folly
+                                                death
+                                                is
+                                                wrote causes maintaing way spite. Plan upon yet way get coldest spot its
+                                                week.
+                                                Almost do am or limits hearts resolve parties the regular intension.
+                                            </p>
+                                            <div class="testimonial-client-info-wrapper">
+                                                <div class="testimonial-client-img">
+                                                    <img src="./assets/images/testimonial client img 1.png" alt="">
+                                                </div>
+                                                <div class="testimonial-client-info">
+                                                    <h4>Michel Dark</h4>
+                                                    <span>Envato Client</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-card">
+                                            <div class="testimonial-rating">
+                                                <span>5.0</span>
+                                                <div class="icon">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Targeting consultation discover apartments. ndulgence off under folly
+                                                death
+                                                is
+                                                wrote causes maintaing way spite. Plan upon yet way get coldest spot its
+                                                week.
+                                                Almost do am or limits hearts resolve parties the regular intension.
+                                            </p>
+                                            <div class="testimonial-client-info-wrapper">
+                                                <div class="testimonial-client-img">
+                                                    <img src="./assets/images/testimonial client img 2.png" alt="">
+                                                </div>
+                                                <div class="testimonial-client-info">
+                                                    <h4>Michel Dark</h4>
+                                                    <span>Envato Client</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+
+                                        <div class="testimonial-card">
+                                            <div class="testimonial-rating">
+                                                <span>4.7</span>
+                                                <div class="icon">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Mentioning consultation discover apartments. ndulgence off under folly
+                                                death
+                                                is
+                                                wrote causes maintaing way spite. Plan upon yet way get coldest spot its
+                                                week.
+                                                Almost do am or limits hearts resolve parties the regular intension.
+                                            </p>
+                                            <div class="testimonial-client-info-wrapper">
+                                                <div class="testimonial-client-img">
+                                                    <img src="./assets/images/testimonial client img 1.png" alt="">
+                                                </div>
+                                                <div class="testimonial-client-info">
+                                                    <h4>Michel Dark</h4>
+                                                    <span>Envato Client</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-card">
+                                            <div class="testimonial-rating">
+                                                <span>5.0</span>
+                                                <div class="icon">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Targeting consultation discover apartments. ndulgence off under folly
+                                                death
+                                                is
+                                                wrote causes maintaing way spite. Plan upon yet way get coldest spot its
+                                                week.
+                                                Almost do am or limits hearts resolve parties the regular intension.
+                                            </p>
+                                            <div class="testimonial-client-info-wrapper">
+                                                <div class="testimonial-client-img">
+                                                    <img src="./assets/images/testimonial client img 2.png" alt="">
+                                                </div>
+                                                <div class="testimonial-client-info">
+                                                    <h4>Michel Dark</h4>
+                                                    <span>Envato Client</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-slider-controls position-relative">
+                                <div class="swiper-pagination"></div>
+                                <button class="swiper-prev">
+                                    <i class="bi bi-chevron-left"></i>
+                                </button>
+                                <button class="swiper-next">
+                                    <i class="bi bi-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client section -->
+        <section class="client-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-5 col-wrapper">
+                        <div class="client-info">
+                            <h4 class="sub-title">Clients</h4>
+                            <h2 class="title animate">Worked with largest brands</h2>
+                            <p class="animate">Give lady of they such they sure it. Me contained explained my education.
+                                Vulgar as
+                                hearts by
+                                garret perceived as perfection.</p>
+                            <div class="clients-img">
+                                <img src="./assets/images/client img 1.png" alt="">
+                                <img src="./assets/images/client img 2.png" alt="">
+                                <img src="./assets/images/client img 3.png" alt="">
+                                <img src="./assets/images/client img 4.png" alt="">
+                                <i class="bi bi-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 offset-xl-1 col-lg-7">
+                        <div class="client-tools-wrapper">
+                            <div class="client-tools">
+                                <div class="total-clients">
+                                    <div class="client-number d-flex">45 <span>+</span></div>
+                                    <span class="client-text">Active Clients</span>
+                                </div>
+                            </div>
+                            <div class="client-tools">
+                                <img src="./assets/images/muast.png" alt="">
+                            </div>
+                            <div class="client-tools">
+                                <img src="./assets/images/bing.png" alt="">
+                            </div>
+                            <div class="client-tools">
+                                <img src="./assets/images/gemini.png" alt="">
+                            </div>
+                            <div class="client-tools">
+                                <img src="./assets/images/spotify.png" alt="">
+                            </div>
+                            <div class="client-tools">
+                                <img src="./assets/images/gate.io.png" alt="">
+                            </div>
+                            <div class="client-tools">
+                                <img src="./assets/images/shutterstock.png" alt="">
+                            </div>
+                            <div class="client-tools">
+                                <img src="./assets/images/envato.png" alt="">
+                            </div>
+                            <div class="client-tools">
+                                <a class="text-uppercase" href="#">View All</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Panel multi section -->
+        <section class="parallax-panels">
+            <div class="panel-wrapper">
+                <div class="panel overflow-hidden">
+                    <div class="container">
+                        <div class="row align-items-xl-center">
+                            <div class="col-lg-5">
+                                <div class="img-wrapper">
+                                    <img src="./assets/images/panel img 1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="content-wrapper">
+                                    <div class="content">
+                                        <h4 class="sub-title">Why Dixor</h4>
+                                        <h2 class="title">Unlock Revenue Growth</h2>
+                                        <div class="faq-accordion accordion" id="accordionExample">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                        aria-expanded="true" aria-controls="collapseOne">
+                                                        Business Innovation
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Bennings appetite disposed me an at subjects an. To no
+                                                            indulgence
+                                                            diminution so discovered mr apartments. Are off under folly
+                                                            death
+                                                            wrote cause.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                        aria-expanded="false" aria-controls="collapseTwo">
+                                                        Search Engine Optimization
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Cennings appetite disposed me an at subjects an. To no
+                                                            indulgence
+                                                            diminution so discovered mr apartments. Are off under folly
+                                                            death
+                                                            wrote cause.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                        aria-expanded="false" aria-controls="collapseThree">
+                                                        Thinking Differently
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Tennings appetite disposed me an at subjects an. To no
+                                                            indulgence
+                                                            diminution so discovered mr apartments. Are off under folly
+                                                            death
+                                                            wrote cause.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="award">
+                                        <div class="award-item">
+                                            <i class="fa-brands fa-behance"></i>
+                                            <h4>Behance Awards</h4>
+                                        </div>
+                                        <div class="award-item">
+                                            <i class="fa-solid fa-layer-group"></i>
+                                            <h4>Design Awards</h4>
+                                        </div>
+                                        <div class="award-item">
+                                            <i class="fa-brands fa-laravel"></i>
+                                            <h4>Coding Awards</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel process-block overflow-hidden">
+                    <div class="container">
+                        <div class="process-wrapper text-center">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="title-wrapper">
+                                        <h4 class="sub-title">Our Process</h4>
+                                        <h2 class="title">Best Solutions Provider</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="process-steps">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 process-steps-item odd">
+                                        <div class="item">
+                                            <div class="icon">
+                                                <img src="./assets/images/process-icon-1.png" alt="">
+                                            </div>
+                                            <h4>Research</h4>
+                                            <p>
+                                                Remarkably on estimating. Side in so life past. Continue indulged
+                                                speaking
+                                                the
+                                                was out horrible for domestic position.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 process-steps-item even">
+                                        <div class="item">
+                                            <div class="icon">
+                                                <img src="./assets/images/process-icon-2.png" alt="">
+                                            </div>
+                                            <h4>Concept</h4>
+                                            <p>
+                                                Terminators on estimating. Side in so life past. Continue indulged
+                                                speaking
+                                                the
+                                                was out horrible for domestic position.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 process-steps-item odd">
+                                        <div class="item">
+                                            <div class="icon">
+                                                <img src="./assets/images/process-icon-3.png" alt="">
+                                            </div>
+                                            <h4>Implement</h4>
+                                            <p>
+                                                Remarkably on estimating. Side in so life past. Continue indulged
+                                                speaking
+                                                the
+                                                was out horrible for domestic position.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 process-steps-item even">
+                                        <div class="item">
+                                            <div class="icon">
+                                                <img src="./assets/images/process-icon-4.png" alt="">
+                                            </div>
+                                            <h4>Handover</h4>
+                                            <p>
+                                                Trensination on estimating. Side in so life past. Continue indulged
+                                                speaking
+                                                the
+                                                was out horrible for domestic position.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel overflow-hidden contact-panel">
+                    <div class="img-wrapper"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <h4 class="sub-title">Have you project in mind?</h4>
+                                <h2 class="title">For instant support <span class="d-inline-block"> Please reach us
+                                    </span>
+                                </h2>
+                                <div class="contact-list">
+                                    <div>
+                                        <div class="icon">
+                                            <i class="bi bi-telephone-fill"></i>
+                                        </div>
+                                        <div class="info">
+                                            <h4>Phone</h4>
+                                            <a href="tel:+4733378901">+4733378901</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="icon">
+                                            <i class="bi bi-envelope-open" style="transform: rotate(0deg);"></i>
+                                        </div>
+                                        <div class="info">
+                                            <h4>Official Email</h4>
+                                            <a href="mailto:info@agrul.com">info@agrul.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog section -->
+        <section class="blog-section">
+            <div class="container">
+                <div class="row row-wrapper">
+                    <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+                        <div class="title-wrapper">
+                            <h4 class="sub-title">News & Events</h4>
+                            <h2 class="title">Latest blog posts</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-card-wrapper">
+                <div class="container">
+                    <div class="row row-wrapper">
+                        <div class="col-lg-6 col-md-6 col-wrapper">
+                            <div class="blog-card">
+                                <div class="img-wrapper position-relative">
+                                    <a href="#">
+                                        <img src="./assets/images/blog img 1.png" alt="">
+                                    </a>
+                                    <div class="blog-post-date">
+                                        14
+                                        <strong class="text-uppercase">Sep</strong>
+                                    </div>
+                                </div>
+                                <div class="blog-info">
+                                    <div class="blog-content">
+                                        <div class="blog-name-comments">
+                                            <ul class="list-unstyled m-0 p-0">
+                                                <li>
+                                                    <a href="#">Md Sohag</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">18 Comments</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="blog-title">
+                                            <a href="#">Miscovery incommode earnestly commanded if.</a>
+                                        </h3>
+                                        <a href="#" class="link">Continue Reading <i
+                                                class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-wrapper">
+                            <div class="blog-card">
+                                <div class="img-wrapper position-relative">
+                                    <a href="#">
+                                        <img src="./assets/images/blog img 2.png" alt="">
+                                    </a>
+                                    <div class="blog-post-date">
+                                        06
+                                        <strong class="text-uppercase">Oct</strong>
+                                    </div>
+                                </div>
+                                <div class="blog-info">
+                                    <div class="blog-content">
+                                        <div class="blog-name-comments">
+                                            <ul class="list-unstyled m-0 p-0">
+                                                <li>
+                                                    <a href="#">Md Sohag</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">26 Comments</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="blog-title">
+                                            <a href="#">Expression acceptance imprudence particular</a>
+                                        </h3>
+                                        <a href="#" class="link">Continue Reading <i
+                                                class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-top-wrapper">
+                    <div class="row">
+                        <div class="col-lg-6 footer-item about">
+                            <div class="img-wrapper">
+                                <img src="./assets/images/header-logo.png" alt="">
+                            </div>
+                            <div class="address">
+                                <div>
+                                    <h4>Australia</h4>
+                                    <p>Travel World House, Level 7, 17 Jones St, NSW, 2060</p>
+                                </div>
+                                <div>
+                                    <h4>Dubai</h4>
+                                    <p>Sheikh Mohammed bin salah, #234 B - Downtown - Dubai</p>
+                                </div>
+                            </div>
+                            <form action="#" class="newsletter-block">
+                                <input type="email" class="form-control" placeholder="Your Email" name="email">
+                                <button type="submit">
+                                    <img src="./assets/images/submit-arrow.png" alt="">
+                                </button>
+                            </form>
+                        </div>
+                        <div class="col-lg-5 offset-lg-1 footer-item">
+                            <h4 class="useful-link-title">Useful Link</h4>
+                            <div class="imp-links overflow-hidden p-0">
+                                <div><a href="#">About Us</a></div>
+                                <div><a href="#">Contact</a></div>
+                                <div><a href="#">FAQS</a></div>
+                                <div><a href="#">Services</a></div>
+                                <div><a href="#">Term & Conditions</a></div>
+                                <div><a href="#">Privacy Policy</a></div>
+                                <div><a href="#">Careers</a></div>
+                                <div><a href="#">Help Desk</a></div>
+                            </div>
+                            <div class="contact-info">
+                                <div class="wrapper">
+                                    <div class="email"><a href="#">info@dixor.com</a></div>
+                                    <div class="contact-number"><a href="#">+47 333 78 901</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="footer-social-media-icons">
+                                <div>
+                                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                                </div>
+                                <div><a href="https://x.com/"><img src="./assets/images/twitter.png" alt=""></a></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 text-lg-end text-center footer-copyright">
+                            <p class="m-0">Copyright © 2024 Dixor. All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+
+    <script type="text/javascript" src="./assets/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./assets/js/slick.min.js"></script>
+
+    <!-- Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- Magnific Popup -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <!-- Aos Animation -->
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+
+    <!-- Lenis -->
+    <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- SplitType -->
+    <script src="https://cdn.jsdelivr.net/npm/split-type"></script>
+
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script src="./assets/js/splitText.min.js"></script>
+    <!-- Custom js -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
